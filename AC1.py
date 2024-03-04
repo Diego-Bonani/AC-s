@@ -7,8 +7,8 @@ valor_b = int(input("Informe o parâmetro b da equação: "));
 valor_c = int(input("Informe o parâmetro c da equação: "));
 
 delta = (valor_b ** 2) - (4 * valor_a * valor_c);
-raiz_1 = (-valor_b + math.sqrt(delta) ) / 2 * valor_a;
-raiz_2 = (-valor_b - math.sqrt(delta) ) / 2 * valor_a;
+raiz_1 = (-valor_b + (delta ** 0.5) ) / 2 * valor_a;
+raiz_2 = (-valor_b - (delta ** 0.5) ) / 2 * valor_a;
 
 print("A primeira raiz da equação é", raiz_1);
 print("A segunda raiz da equação é", raiz_2);
