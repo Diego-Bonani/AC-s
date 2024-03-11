@@ -42,9 +42,13 @@ def duas_maiores_notas(ap1, ap2, asub):
     if ap1 < asub:
         if ap1 < ap2:
             return ap2, asub
+        else:
+            return ap1, asub
     elif ap2 < asub:
         if ap2 < ap1:
             return ap1, asub
+        else:
+            return ap2, asub
     else:
         return ap1, ap2
 
