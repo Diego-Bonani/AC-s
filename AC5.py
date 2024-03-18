@@ -23,8 +23,10 @@ def main():
 
     while(vida_aventureiro and vida_monstro):
         rodada += 1
-        vida_aventureiro -= (ata_monstro - def_aventureiro)
-        vida_monstro -= ata_aventureiro
+        dano_monstro = random.randint(1, ata_monstro) - def_aventureiro
+        if dano_monstro > 0:
+            vida_aventureiro -= dano_monstro
+        vida_monstro -= random.randint(1, ata_aventureiro)
         if(vida_aventureiro <= 0):
             vida_aventureiro = 0
             print("O aventureiro morreu")
